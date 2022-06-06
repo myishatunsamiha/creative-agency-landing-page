@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* for navbar */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+/* for banner */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar-text {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.banner .first-para {
+    font-weight: 800;
+}
+
+.common-style-btn {
+    border-radius: 24px;
+    padding: 12px 50px 12px 50px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.solid-btn {
+    color: white;
+    box-shadow: 0px 4px 8px 0px #377DFF;
+}
+
+.teammates-btn {
+    border-radius: 24px;
+    padding: 10px 25px 10px 25px;
+    font-size: 12px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.services-icon {
+    border-radius: 50%;
+    padding: 24px;
+}
+
+.services-name {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+
+}
+
+
+
+.double-images {
+    position: relative;
+}
+
+.img1 {
+    position: absolute;
+    right: 50px;
+    top: 0px;
+    z-index: -2;
+}
+
+.img2 {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: -1;
+}
+
+.medium-banner-img {
+    position: relative;
+    background-image: url('./images/employees.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 350px;
+}
+
+
+.img-tag1 {
+    height: 80px;
+    width: 170px;
+    position: absolute;
+    top: 5px;
+    left: -70px;
+}
+
+.img-tag2 {
+    height: 166px;
+    width: 166px;
+    position: absolute;
+    bottom: -5px;
+    left: 480px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+    .medium-banner-img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .img-tag1 {
+        height: 80px;
+        width: 170px;
+        position: absolute;
+        top: -25px;
+        left: -5px;
+    }
+
+    .img-tag2 {
+        height: 166px;
+        width: 166px;
+        position: absolute;
+        bottom: -130px;
+        left: 135px;
+    }
+}
